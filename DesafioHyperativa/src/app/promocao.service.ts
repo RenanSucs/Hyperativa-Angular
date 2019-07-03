@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { tap } from 'rxjs/operators'
 
 import { Promocao } from './promocao';
 
@@ -15,10 +14,7 @@ export class PromocaoService {
 
   listar(){
 
-    return this.http.get<Promocao[]>(this.promocaoUrl)
-      .pipe(
-        tap(console.log)
-      );
+    return this.http.get<Promocao[]>(this.promocaoUrl);
   }
 
 }

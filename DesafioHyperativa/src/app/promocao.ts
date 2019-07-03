@@ -6,4 +6,6 @@ export interface Promocao{
     faq:number;
     question:string;
     answer:string;
+    title: string;
+    highlightTitle: string;
 }
