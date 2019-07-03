@@ -9,18 +9,16 @@ import { PromocaoService } from '../promocao.service';
 })
 export class DestaqueComponent implements OnInit {
 
-  promocoes: Array<any>;
+  promocoes: any[] = [];
 
   constructor(private PromocaoService: PromocaoService) { }
 
   ngOnInit() {
 
-    this.listar();
-  }
-
-  listar(){
-
-    this.PromocaoService.listar().subscribe(dados => this.promocoes = dados);
+    this.PromocaoService.listar()
+      .subscribe(dados => {
+        console.log(dados[1].faq[1].question)
+        this.promocoes = dados});
   }
 
 }

@@ -1,18 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { tap } from 'rxjs/operators'
+
+import { Promocao } from './promocao';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PromocaoService {
 
-  promocaoUrl = 'http://localhost:3000/promotions';
+  private readonly promocaoUrl = 'http://localhost:3000/promotions';
 
   constructor(private http: HttpClient) { }
 
   listar(){
 
-    return this.http.get<any[]>(`${this.promocaoUrl}`);
+    return this.http.get<Promocao[]>(this.promocaoUrl)
+      .pipe(
+        tap(console.log)
+      );
   }
 
 }
