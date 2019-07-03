@@ -9,7 +9,8 @@ import { PromocaoService } from '../promocao.service';
 })
 export class DestaqueComponent implements OnInit {
 
-  promocoes: any[] = [];
+  promocoes: any;
+
 
   constructor(private PromocaoService: PromocaoService) { }
 
@@ -17,8 +18,18 @@ export class DestaqueComponent implements OnInit {
 
     this.PromocaoService.listar()
       .subscribe(dados => {
-        console.log(dados[1].faq[1].question)
-        this.promocoes = dados});
+        this.promocoes = dados[0].id;
+        console.log(this.promocoes)
+      });
   }
 
+ 
 }
+
+/*ngOnInit() {
+
+  this.PromocaoService.listar()
+    .subscribe(dados => {
+      console.log(dados[1].faq[1].question)
+      this.promocoes = dados});
+}*/
