@@ -1,9 +1,35 @@
+figure{
+  margin: 0;
+  padding:0;
+}
+
+.pb-5{
+  padding-bottom: 6rem!important;
+}
+
+.container{
+  max-width: 95%;
+}
+
+.container-promocao{
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 .cabecalhoPrincipal{
     background-color: #292988;
     height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+}
+
+.nav-flex{
+  display: flex;
+  justify-content: flex-end;
+  min-width: 90%;
+  margin: 0 auto;
 }
 
 .botao {
@@ -13,7 +39,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 40px;
     cursor: pointer;
   }
   
@@ -26,6 +51,20 @@
     border-radius: 5%;  
   }
 
+.botao-promocao{
+  background-color: #fcb900;
+  border: none;
+  color: #292988;
+  padding: 15px 140px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2%; 
+  font-weight: bold;
+}
+
 .tituloPrincipal{
   color:#292988;
   font-weight: 350;
@@ -34,5 +73,41 @@
 .rowCabecalho{
   height: 15px;
   transform: rotateY(180deg);
-  margin-top: 13px;
+  align-self: center;
+}
+
+.img-promocao{
+  background-image: url("http://localhost:3000/hightlight.jpg");
+  width: 65%;
+  height: 360px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: left;
+}
+
+.background-promocao{
+  background-image: linear-gradient(to right, #292988, #2b2b88, #2d2d89, #2f2f89, #313189);
+  height: 360px;
+  width: 100%;
+}
+
+.divisor{
+  border-bottom: 1px solid #f7f3f35b;
+  width: 90%;
+}
+
+.conteudo-promocao{
+  width: 32%;
+  float: right;
+}
+
+.conteudo-promocao h4{
+  font-weight: 350;
+  color: #f7e7e7;
+}
+
+.conteudo-promocao p{
+  color: #f7e7e7;
 }

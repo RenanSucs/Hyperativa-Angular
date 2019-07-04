@@ -1,11 +1,24 @@
 <header class="cabecalhoPrincipal">
-    <nav>
-      <button class="botao botao1">Entrar</button>
+    <nav class="nav-flex">
+        <button class="botao botao1">Entrar</button>
     </nav>
 </header>
-<main class="container">
-  <div class="row mt-5">
-    <img class="img-fluid rowCabecalho mr-3" src="http://localhost:3000/arrow-faq-collapsed.png">
-    <h2 class="tituloPrincipal">{{ promocoes[0].title}}</h2>
-  </div>
+<main>
+  <section class="container">
+    <div class="row mt-5">
+      <img class="img-fluid rowCabecalho mr-3" src="http://localhost:3000/arrow-faq-collapsed.png">
+      <h2 class="tituloPrincipal">{{ promocoes[0].title}}</h2>
+    </div>
+  </section>
+  <section class="container-promocao">
+      <figure class="img-promocao"></figure>
+      <div class="background-promocao">
+        <div class="conteudo-promocao">
+          <h4 class="pt-4 pb-4">{{ promocoes[0].highlightTitle}}</h4>
+          <div class="divisor"></div>
+          <p class="pt-4 pb-5">{{ promocoes[0].highlightText}}</p>
+          <button class="botao-promocao">{{ promocoes[0].highlightButtonText }}</button>
+        </div>
+      </div>
+  </section>
 </main>
