@@ -8,11 +8,11 @@ figure{
 }
 
 .container{
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .container-promocao{
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ figure{
   background-color: #fcb900;
   border: none;
   color: #292988;
-  padding: 15px 140px;
+  padding: 15px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -63,6 +63,9 @@ figure{
   cursor: pointer;
   border-radius: 2%; 
   font-weight: bold;
+  flex-shrink: 2;
+  width: 80%;
+  align-self: center;
 }
 
 .tituloPrincipal{
@@ -79,7 +82,7 @@ figure{
 .img-promocao{
   background-image: url("http://localhost:3000/hightlight.jpg");
   width: 65%;
-  height: 360px;
+  height: 400px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,26 +91,30 @@ figure{
 }
 
 .background-promocao{
-  background-image: linear-gradient(to right, #292988, #2b2b88, #2d2d89, #2f2f89, #313189);
-  height: 360px;
-  width: 100%;
+  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(41,41,136,1) 49%, rgba(22,13,193,1) 100%);
+  height: 400px;
+  width: 35%;
+  float: right;
 }
 
 .divisor{
   border-bottom: 1px solid #f7f3f35b;
-  width: 90%;
+  width: 75%;
+  align-self: center;
 }
 
 .conteudo-promocao{
-  width: 32%;
-  float: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .conteudo-promocao h4{
   font-weight: 350;
   color: #f7e7e7;
+  padding-left: 10%;
 }
 
 .conteudo-promocao p{
   color: #f7e7e7;
+  padding-left: 10%;
 }
