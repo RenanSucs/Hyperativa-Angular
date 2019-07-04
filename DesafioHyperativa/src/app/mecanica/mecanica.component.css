@@ -1,0 +1,34 @@
+.container{
+    max-width: 90%;
+}
+
+.titulo-steps{
+    text-align: center;
+    margin-top: 25rem;
+    color:#fcb900;
+    font-weight: 350;
+}
+
+.steps-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-item{
+    width: 33%;
+}
+
+.steps-item h4{
+    color: #fcb900
+}
+
+.background-calendario{
+    background-color: #fcb900;
+    text-align: center;
+}
+
+.background-calendario h3,
+.background-calendario p{
+    color: #f7e7e7;
+    font-weight: 350;
+}

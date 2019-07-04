@@ -8,4 +8,5 @@ export interface Promocao{
     answer:string;
     title: string;
     highlightTitle: string;
+    calendarPeriod: any;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { PromocaoService } from '../promocao.service';
 import { Promocao } from '../promocao';
@@ -9,8 +9,8 @@ import { Promocao } from '../promocao';
   styleUrls: ['./destaque.component.css']
 })
 export class DestaqueComponent implements OnInit {
-
-  promocoes: Promocao[] = []
+  
+  @Input() promocoes: Promocao[] = []
 
 
   constructor(private PromocaoService: PromocaoService) { }
@@ -25,7 +25,6 @@ export class DestaqueComponent implements OnInit {
 
  
 }
-
 
 /* 
 
