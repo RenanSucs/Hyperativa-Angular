@@ -20,14 +20,10 @@ export class MecanicaComponent implements OnInit {
   ngOnInit() {
 
         this.PromocaoService.listar()
-        .subscribe(dados => {
-        this.promocoes = dados
-        });
+          .subscribe(dados => this.promocoes = dados);
 
         this.PromocaoService.listar()
-        .subscribe(dados => {
-          this.url = dados[0].calendarPeriod;
-        });
+          .subscribe(dados => this.url = dados[0].calendarPeriod);
         
   }
 

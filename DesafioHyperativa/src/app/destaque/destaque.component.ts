@@ -19,8 +19,8 @@ export class DestaqueComponent implements OnInit {
 
       this.PromocaoService.listar()
         .subscribe(dados => {
-        this.promocoes = dados
-        console.log(this.promocoes)});
+          this.promocoes = dados
+          console.log(this.promocoes)});
   }
 
  
