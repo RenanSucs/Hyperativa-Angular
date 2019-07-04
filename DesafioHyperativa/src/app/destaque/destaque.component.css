@@ -73,10 +73,13 @@ figure{
   font-weight: 350;
 }
 
-.rowCabecalho{
-  height: 15px;
-  transform: rotateY(180deg);
-  align-self: center;
+.row-cabecalho{
+    background-image: url("http://localhost:3000/arrow-faq-collapsed.png");
+    margin-top: 7px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
 }
 
 .img-promocao{

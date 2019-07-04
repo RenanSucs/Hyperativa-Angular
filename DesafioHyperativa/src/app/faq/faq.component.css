@@ -1,9 +1,19 @@
 .background-faq{
     background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(41,41,136,1) 49%, rgba(22,13,193,1) 100%);
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .background-faq h3{
     color: #f7e7e7;
     font-weight: 350;
+}
+
+.row-faq{
+    background-image: url("http://localhost:3000/arrow-faq-collapsed-open.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    margin-top: 7px;
+    margin-left: 5px;
 }
