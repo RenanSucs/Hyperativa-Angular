@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { PromocaoService } from '../promocao.service';
-import { Promocao } from '../promocao';
+import { PromocaoService } from '../../promocao.service';
+import { Promocao } from '../../promocao';
 
 @Component({
   selector: 'app-destaque',

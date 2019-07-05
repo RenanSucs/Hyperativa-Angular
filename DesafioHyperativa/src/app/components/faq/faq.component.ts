@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
-import { PromocaoService } from '../promocao.service';
-import { Promocao } from '../promocao';
+import { PromocaoService } from '../../promocao.service';
+import { Promocao } from '../../promocao';
 
 @Component({
   selector: 'app-faq',

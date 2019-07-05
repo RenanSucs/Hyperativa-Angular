@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Promocao } from '../promocao';
-import { PromocaoService } from '../promocao.service';
+import { Promocao } from '../../promocao';
+import { PromocaoService } from '../../promocao.service';
 
 @Component({
   selector: 'app-mecanica',

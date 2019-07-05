@@ -16,5 +16,4 @@ export class PromocaoService {
 
     return this.http.get<Promocao[]>(this.promocaoUrl);
   }
-
 }

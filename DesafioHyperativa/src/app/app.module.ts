@@ -2,24 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app.routing.module';
 
 import { AppComponent } from './app.component';
-import { DestaqueComponent } from './destaque/destaque.component';
+import { DestaqueComponent } from './components/destaque/destaque.component';
 import { PromocaoService } from './promocao.service';
-import { MecanicaComponent } from './mecanica/mecanica.component';
-import { FaqComponent } from './faq/faq.component';
+import { MecanicaComponent } from './components/mecanica/mecanica.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { ComprouGanhouComponent } from './comprou-ganhou/comprou-ganhou.component';
+import { ErrorsComponent } from './errors/errors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DestaqueComponent,
     MecanicaComponent,
-    FaqComponent
+    FaqComponent,
+    ComprouGanhouComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
     
   ],
   providers: [PromocaoService],
