@@ -1,4 +1,32 @@
 <div class="background-faq mt-3 pt-3 pb-2">
-    <h3>{{ promocoes[0].faqTitle}}</h3>
+    <h3>{{ promocoes[0].faqTitle }}</h3>
     <figure class="row-faq"></figure>
 </div>
+<section class="container">
+    <div class="faq-flex pt-4">
+        <p>{{ promocoes[0].faq[0].question }}</p>
+        <figure (click)='animation0()' [@rowAnimation]='stateRow0' class="row-faq-question"></figure>
+    </div>
+    <div>
+        <p [@hideAnswerAnimation0]='stateAnswer0' class="hide-answer" [innerHTML]="promocoes[0].faq[0].answer"></p>
+    </div>
+    
+    <div class="faq-flex pt-4">
+        <p>{{ promocoes[0].faq[1].question }}</p>
+        <figure (click)='animation1()' [@rowAnimation]='stateRow1' class="row-faq-question"></figure>
+    </div>
+    <div>
+        <p [@hideAnswerAnimation1]='stateAnswer1' class="hide-answer" [innerHTML]="promocoes[0].faq[1].answer"></p>
+    </div>
+    
+    <div class="faq-flex pt-4">
+        <p>{{ promocoes[0].faq[2].question }}</p>
+        <figure (click)='animation2()' [@rowAnimation]='stateRow2' class="row-faq-question"></figure>
+    </div>
+    <div>
+        <p [@hideAnswerAnimation2]='stateAnswer2' class="hide-answer" [innerHTML]="promocoes[0].faq[2].answer"></p>
+    </div>
+    <div class="mt-4 mb-4 disclaimer">
+        <small>{{ promocoes[0].disclaimerText }}</small>
+    </div>
+</section>

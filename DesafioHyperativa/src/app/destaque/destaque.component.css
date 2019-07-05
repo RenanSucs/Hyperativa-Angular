@@ -17,7 +17,7 @@ figure{
 }
 
 .cabecalhoPrincipal{
-    background-color: #292988;
+    background-color: #1a1f71;
     height: 70px;
     display: flex;
     justify-content: flex-end;
@@ -44,17 +44,17 @@ figure{
   
 .botao1 {
     background-color: transparent; 
-    color: #fff; 
-    border: 1px solid #f7e7e7;
+    color: #ebfcff; 
+    border: 1px solid #ebfcff;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 5%;  
   }
 
 .botao-promocao{
-  background-color: #fcb900;
+  background-color: #fb9e05;
   border: none;
-  color: #292988;
+  color: #1a1f71;
   padding: 15px 0;
   text-align: center;
   text-decoration: none;
@@ -69,7 +69,7 @@ figure{
 }
 
 .tituloPrincipal{
-  color:#292988;
+  color:#1a1f71;
   font-weight: 350;
 }
 
@@ -94,7 +94,7 @@ figure{
 }
 
 .background-promocao{
-  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(41,41,136,1) 49%, rgba(22,13,193,1) 100%);
+  background-image: linear-gradient(90deg, #020024 0%, #1a1f71 49%, #0c40a3 100%);
   height: 400px;
   width: 35%;
   float: right;
@@ -113,11 +113,11 @@ figure{
 
 .conteudo-promocao h4{
   font-weight: 350;
-  color: #f7e7e7;
+  color: #ebfcff;
   padding-left: 10%;
 }
 
 .conteudo-promocao p{
-  color: #f7e7e7;
+  color: #ebfcff;
   padding-left: 10%;
 }
